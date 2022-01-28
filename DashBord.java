@@ -31,7 +31,7 @@ public class DashBord {
         final int[] index = {1};
         for(int i=1;i<10;i++){
             HBox hBox=new HBox();
-            hBox.getStyleClass().add("container");
+            hBox.getStyleClass().add("game-container");
             int id=i;
             GridPane.setConstraints(hBox,column,row);
             column++;
@@ -45,6 +45,14 @@ public class DashBord {
                     System.out.println(id);
                     String amswer=multiPlayer.play(index[0],id);
                     if (amswer.equals("tie")){
+                        Label label;
+                        if(index[0]==1){
+                            label= new Label("X");
+                        }
+                        else{
+                            label = new Label("0");
+                        }
+                        hBox.getChildren().add(label);
                         Alert alert=new Alert(Alert.AlertType.ERROR);
                         alert.setContentText("tie");
                         alert.show();

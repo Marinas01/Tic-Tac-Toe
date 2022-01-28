@@ -17,15 +17,6 @@ public class DashBord {
 
         MultiPlayer multiPlayer=new MultiPlayer();
         GridPane gridPane=new GridPane();
-        HBox first=new HBox();
-        HBox second=new HBox();
-        HBox therd=new HBox();
-        HBox forth=new HBox();
-        HBox fifth=new HBox();
-        HBox sixth=new HBox();
-        HBox seventh=new HBox();
-        HBox eigth=new HBox();
-        HBox nineth=new HBox();
         int row=0;
         int column=0;
         final int[] index = {1};

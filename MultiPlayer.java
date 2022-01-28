@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 // this class is the multy-player game between two players
@@ -16,7 +15,7 @@ public class MultiPlayer implements  Game{
     @Override
     public String play(int index, int id) {
         //the returned value;
-        String answer="";
+        String answer;
         //check if someone allready click on this space
         if(gameBord.contains(id)){
             return "is taken";
